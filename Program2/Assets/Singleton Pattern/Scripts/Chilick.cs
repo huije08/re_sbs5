@@ -17,7 +17,7 @@ public class Chilick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.State == false) return;
+        if (GameManager.Instance.State == false) return;
         float x = Mathf.PingPong(Time.time * speed, 1.0f);
         transform.localScale = minScale + (maxScale - minScale) * x;
     }

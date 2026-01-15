@@ -19,7 +19,7 @@ public class Berrion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.State == false) return;
+        if (GameManager.Instance.State == false) return;
         float z = Mathf.PingPong(Time.time * speed, 1f);
 
         transform.localPosition=initializePosition+direction.normalized*z;

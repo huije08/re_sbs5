@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] bool state;
+    public bool state;
     [SerializeField] static GameManager instance;
     public static GameManager Instance
     {
@@ -14,6 +15,14 @@ public class GameManager : MonoBehaviour
             if (instance == null)
             {
                 instance = FindObjectOfType<GameManager>();
+                if (instance == null)
+                {
+                    GameObject clone = new GameObject(nameof(GameManager));
+
+                    instance = clone.AddComponent<GameManager>();
+                }
+                
+                
             }
             return instance; 
         }
@@ -26,7 +35,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        instance = this;
+     
     }
     // Start is called before the first frame update
     void Start()
@@ -35,7 +44,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Pause()
+    public void Pause()
     {
         state = false;
     }

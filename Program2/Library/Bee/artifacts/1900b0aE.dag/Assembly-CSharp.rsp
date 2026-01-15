@@ -356,6 +356,11 @@
 "Assets/Singleton Pattern/Scripts/Chilick.cs"
 "Assets/Singleton Pattern/Scripts/Fuzzbit.cs"
 "Assets/Singleton Pattern/Scripts/GameManager.cs"
+"Assets/Singleton Pattern/Scripts/Handler.cs"
+"Assets/Strategy Pattern/Scripts/Granade.cs"
+"Assets/Strategy Pattern/Scripts/Knife.cs"
+"Assets/Strategy Pattern/Scripts/Rifle.cs"
+"Assets/Strategy Pattern/Scripts/Weapon.cs"
 -langversion:9.0
 /deterministic
 /optimize+

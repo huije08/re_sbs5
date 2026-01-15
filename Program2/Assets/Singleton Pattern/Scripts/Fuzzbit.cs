@@ -20,9 +20,12 @@ public class Fuzzbit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.State == false) return;
+        if (GameManager.Instance.State == false) return;
+
         float time = Mathf.PingPong(Time.time * speed, 1f);
+
         float value = (time * 2f - 1f) * angle;
+
         transform.localRotation = quaternion * Quaternion.AngleAxis(value, axis);
     }
 }

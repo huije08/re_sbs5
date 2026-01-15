@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Singleton Pattern/Scenes/SampleScene.unity
+- path: Assets/Strategy Pattern/Scene/Strategy.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
