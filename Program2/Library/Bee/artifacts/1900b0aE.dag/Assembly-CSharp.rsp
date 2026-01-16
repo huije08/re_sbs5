@@ -116,6 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -360,6 +361,7 @@
 "Assets/Strategy Pattern/Scripts/Granade.cs"
 "Assets/Strategy Pattern/Scripts/Knife.cs"
 "Assets/Strategy Pattern/Scripts/Rifle.cs"
+"Assets/Strategy Pattern/Scripts/Weapon Manager.cs"
 "Assets/Strategy Pattern/Scripts/Weapon.cs"
 -langversion:9.0
 /deterministic
