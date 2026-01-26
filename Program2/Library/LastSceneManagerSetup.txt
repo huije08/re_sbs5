@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Strategy Pattern/Scene/Strategy.unity
+- path: Assets/Composite Pattern/Scenes/Composite.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
