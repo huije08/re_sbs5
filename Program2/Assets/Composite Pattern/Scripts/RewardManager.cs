@@ -8,7 +8,8 @@ public class RewardManager : MonoBehaviour
     [SerializeField] Bundle bundle;
 
     [SerializeField] Reward reward;
-    [SerializeField] GameObject rewardList;
+    [SerializeField] GameObject panel;
+    [SerializeField] Transform patentTransform; 
     private void Awake()
     {
         createCount = Random.Range(1, 5);
@@ -31,6 +32,6 @@ public class RewardManager : MonoBehaviour
     {
         bundle.Receive();
 
-        rewardList.SetActive(false);
+        panel.SetActive(false);
     }
 }
